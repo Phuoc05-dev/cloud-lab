@@ -1,0 +1,15 @@
+version: '3.8'
+
+services:
+  backend:
+    build: ./server
+    ports:
+      - "5000:5000"
+    environment:
+      # Lắp admin và Tulephuoc123 vào đúng vị trí này nha:
+      - MONGODB_URI=mongodb+srv://admin:Tulephuoc123@cluster0.z4onfwx.mongodb.net/?appName=Cluster0
+
+  frontend:
+    build: ./client
+    ports:
+      - "4173:4173"

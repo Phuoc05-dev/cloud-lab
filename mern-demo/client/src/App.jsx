@@ -5,8 +5,7 @@ function App() {
   const [students, setStudents] = useState([])
   const [formData, setFormData] = useState({ studentId: '', name: '', email: '' })
 
-  // Link kết nối API của ông (giữ nguyên không đổi)
-  const apiUrl = 'https://ominous-spork-jj96p6xg6j5whjqjx-5000.app.github.dev/api/students';
+  const apiUrl = 'http://localhost:5000/api/students';
 
   useEffect(() => {
     fetchStudents()
