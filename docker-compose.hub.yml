@@ -1,0 +1,13 @@
+services:
+  backend:
+    image: tulephuoc1010/mern-backend:1.0  
+    ports:
+      - "5000:5000"                        
+    environment:
+      - MONGODB_URI=mongodb+srv://admin:cluster0.z4onfwx.mongodb.net/?appName=Cluster0
+      - PORT=5000
+
+  frontend:
+    image: tulephuoc1010/mern-frontend:2.0
+    ports:
+      - "4173:4173"                        

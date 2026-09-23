@@ -39,7 +39,7 @@ function App() {
       <div style={{ maxWidth: '850px', margin: '0 auto', backgroundColor: '#ffffff', padding: '30px', borderRadius: '12px', boxShadow: '0 4px 15px rgba(0,0,0,0.1)' }}>
         
         <h2 style={{ textAlign: 'center', color: '#2c3e50', marginBottom: '30px', fontSize: '28px' }}>
-          🎓 Hệ Thống Quản Lý Sinh Viên
+          🎓 Hệ Thống Quản Lý Sinh Viên - Version 2.0
         </h2>
         
         {/* Form nhập liệu */}
