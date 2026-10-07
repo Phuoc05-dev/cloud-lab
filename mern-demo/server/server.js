@@ -8,14 +8,38 @@ const app = express();
 const port = process.env.PORT || 5000;
 const uri = process.env.MONGODB_URI;
 
+const allowedOrigins = [
+  process.env.CLIENT_URL,
+  'http://localhost:5173',
+  'http://localhost:3000'
+];
+
+app.use(cors({
+  origin: function (origin, callback) {
+    if (
+      !origin ||
+      allowedOrigins.includes(origin) ||
+      process.env.NODE_ENV !== 'production'
+    ) {
+      callback(null, true);
+    } else {
+      callback(null, true);
+    }
+  },
+  credentials: true
+}));
+
 app.use(express.json());
-app.use(cors());
+
+app.get('/api/hello', (req, res) => {
+  res.json({ message: 'Backend is running' });
+});
 
 mongoose.connect(uri)
   .then(() => console.log('Ket noi MongoDB Atlas thanh cong!'))
   .catch((err) => console.error('Loi ket noi MongoDB:', err));
 
-// Câu 35
+// Câu 35 
 const studentSchema = new mongoose.Schema({
   studentId: String,
   name: String,

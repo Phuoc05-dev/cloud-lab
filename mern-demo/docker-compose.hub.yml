@@ -4,7 +4,7 @@ services:
     ports:
       - "5000:5000"                        # Câu 53: Cấu hình Port
     environment:
-      - MONGODB_URI=mongodb+srv://admin:Tulephuoc123@cluster0.z4onfwx.mongodb.net/?appName=Cluster0  # Câu 55
+      - MONGODB_URI=mongodb+srv://admin:  cluster0.z4onfwx.mongodb.net/?appName=Cluster0  # Câu 55
       - PORT=5000
 
   frontend:
