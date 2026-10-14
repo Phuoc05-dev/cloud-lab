@@ -1,5 +1,5 @@
 # Cloud Computing Laboratory
 
-Student Name: [Hồ Đại Vĩ]
-Student ID: [234822]
+Student Name: [Từ Lê Phước]
+Student ID: [234753]
 Class: [DH23TIN05]
